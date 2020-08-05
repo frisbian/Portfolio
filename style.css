@@ -1,0 +1,171 @@
+/*Code Requirements
+
+    Create a page layout using flexbox.
+    Implement appropriate media queries for responsive design.
+    Utilize semantic, valid markup
+    Build your page from scratch (no template usage)
+    Use Responsive Navigation
+    Code a functional Contact form
+
+Detail and quality requirements
+
+    Page should not have typos and should offer content clarity and readability
+
+Page Content Requirements
+
+    Intro Section:
+        Who you are
+        Where you are
+        What you do and what makes you special
+    About Me section:
+        demonstrate your passion for the web
+        demonstrate desire to work </p>on a team with great programmers
+        show your personality outside of coding
+        List of services you can (or want to) provide a client.
+    Contact Section:
+        email address
+        link to github
+        link to linkedin
+        functional contact form
+    Project section
+        Project Title
+        Project Description
+        link to Project
+
+(Note: You may not have developed projects yet. Setup your portfolio with placeholder content. You'll replace this placeholder content as you move through the program and complete assignments. Placeholder content for all of the following is acceptable.)
+
+    Sample project listing
+    Title of the project
+    Description that explains what the app does, who it's for, why you built it.
+        Skills used (what is the stack)
+        (Optional) Screenshot that presents the app appropriately - may be a placeholder - the actual image does not really matter.
+        Link to the GitHub repo of the project
+        Link to live, working app
+
+Please submit the GitHub.com repo URL, as well as the GitHub.io website address, to be reviewed.*/
+
+body {
+  margin: 0;
+  color: white;
+  background-color: black;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*---Logo---*/
+header {
+  background-color: rgb(0, 183, 255);
+  margin-bottom: 40px;
+}
+
+header h1 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+  font-size: 40px;
+}
+
+header h2 {
+  color: #fff;
+  text-align: center;
+}
+
+/*---Navigation---*/
+header nav {
+  display: flex;
+  justify-content: center;
+  
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 20px;
+}
+
+/*---Primary---*/
+main {
+  padding: 20px 0;
+}
+
+section {
+  margin-bottom: 100px;
+  background-color: rgb(0, 183, 255);
+  border-radius: 25px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+
+/*Specific Styling*/
+
+
+p {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+    font-size: 20;
+}
+
+li  {
+    font-size: 20px;
+}
+
+s
+
+
+/*---Desktop---*/
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  header h1 {
+    margin: 14px 0;
+    padding-top: 0;
+  }
+
+  header nav {
+    margin-top: 8px;
+  }
+
+  header nav ul li a:hover {
+    color: #bdbdbd;
+  }
+}
+
+/*--Contact form--*/
+form label {
+  display: block;
+}
